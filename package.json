@@ -1,0 +1,66 @@
+{
+  "name": "vue-starter-theme",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Shopify Inc., Jambon",
+  "description": "A barebones, Slate compatible, starting point for developing Shopify themes with vue.",
+  "keywords": [
+    "shopify",
+    "theme",
+    "vue"
+  ],
+  "bugs": "https://github.com/jambonn/vue-starter-theme/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jambonn/vue-starter-theme.git"
+  },
+  "devDependencies": {
+    "@shopify/slate-tools": "1.0.0-beta.15",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-shopify": "^16.2.0",
+    "babel-preset-vue": "^2.0.2",
+    "eslint-plugin-shopify": "^19.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-url": "^8.0.0",
+    "stylelint-config-prettier": "^3.0.4",
+    "stylelint-config-shopify": "^5.0.0",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "dependencies": {
+    "@shopify/theme-a11y": "^2.0.1",
+    "@shopify/theme-addresses": "^3.0.0",
+    "@shopify/theme-cart": "^1.0.0-alpha.7",
+    "@shopify/theme-currency": "^1.0.0-alpha.7",
+    "@shopify/theme-images": "^1.0.0-alpha.7",
+    "@shopify/theme-product": "^1.0.0",
+    "@shopify/theme-product-form": "^3.0.0",
+    "@shopify/theme-rte": "^1.0.0-alpha.7",
+    "@shopify/theme-sections": "^1.1.0",
+    "@shopify/theme-variants": "^1.0.0-alpha.8",
+    "jquery": "^3.2.1",
+    "lazysizes": "^4.1.1",
+    "lodash-es": "^4.17.4",
+    "mini-css-extract-plugin": "^0.8.0",
+    "normalize.css": "^7.0.0",
+    "qrcode": "^1.3.2",
+    "vue": "^2.6.10",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^2.0.0"
+  },
+  "scripts": {
+    "start": "slate-tools start",
+    "watch": "slate-tools start --skipFirstDeploy",
+    "build": "slate-tools build",
+    "deploy": "slate-tools build && slate-tools deploy",
+    "zip": "slate-tools build && slate-tools zip",
+    "lint": "slate-tools lint",
+    "format": "slate-tools format"
+  }
+}
